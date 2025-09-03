@@ -1,0 +1,505 @@
+!DOCTYPE html
+html lang=fr
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titlePrimodis - Matériaux de Construction & Équipementstitle
+    script src=httpscdn.tailwindcss.comscript
+    link href=httpsfonts.googleapis.comcss2family=Interwght@300;400;500;600;700&display=swap rel=stylesheet
+    link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.4.0cssall.min.css
+    style
+        root {
+            --primary #1a365d;
+            --secondary #2d3748;
+            --accent #f6ad55;
+            --text #e2e8f0;
+            --dark-bg #0f172a;
+        }
+        
+        body {
+            font-family 'Inter', sans-serif;
+            background-color var(--dark-bg);
+            color var(--text);
+            overflow-x hidden;
+        }
+        
+        .hero-gradient {
+            background linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--dark-bg) 100%);
+        }
+        
+        .card-hover {
+            transition all 0.3s ease;
+            transform translateY(0);
+        }
+        
+        .card-hoverhover {
+            transform translateY(-8px);
+            box-shadow 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .animate-float {
+            animation float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform translateY(0px); }
+            50% { transform translateY(-20px); }
+        }
+        
+        .animate-pulse-slow {
+            animation pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse-slow {
+            0%, 100% { opacity 1; }
+            50% { opacity 0.7; }
+        }
+        
+        .section-divider {
+            height 2px;
+            background linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+    style
+head
+body class=min-h-screen
+    !-- Navigation --
+    nav class=bg-gray-900 bg-opacity-90 backdrop-blur-md fixed w-full z-50
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
+            div class=flex items-center justify-between h-16
+                div class=flex items-center
+                    div class=flex-shrink-0 flex items-center
+                        div class=w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center
+                            span class=text-gray-900 font-bold text-xlPspan
+                        div
+                        span class=ml-3 text-white text-xl font-boldPRIMODISspan
+                    div
+                div
+                div class=hidden mdblock
+                    div class=ml-10 flex items-baseline space-x-4
+                        a href=#accueil class=text-gray-300 hovertext-white px-3 py-2 rounded-md text-sm font-medium transition-colorsAccueila
+                        a href=#services class=text-gray-300 hovertext-white px-3 py-2 rounded-md text-sm font-medium transition-colorsServicesa
+                        a href=#produits class=text-gray-300 hovertext-white px-3 py-2 rounded-md text-sm font-medium transition-colorsProduitsa
+                        a href=#contact class=text-gray-300 hovertext-white px-3 py-2 rounded-md text-sm font-medium transition-colorsContacta
+                    div
+                div
+            div
+        div
+    nav
+
+    !-- Hero Section --
+    section id=accueil class=hero-gradient min-h-screen flex items-center pt-16
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8 py-20
+            div class=grid grid-cols-1 lggrid-cols-2 gap-12 items-center
+                div
+                    h1 class=text-5xl mdtext-6xl font-bold text-white mb-6
+                        span class=blockMatériaux despan
+                        span class=text-orange-400Qualité Supérieurespan
+                    h1
+                    p class=text-xl text-gray-300 mb-8 leading-relaxed
+                        Primodis votre partenaire de confiance pour tous vos besoins en matériaux de construction, 
+                        santé, électricité et peinture. Expertise et qualité depuis des années.
+                    p
+                    div class=flex flex-wrap gap-4
+                        a href=#contact class=bg-orange-500 hoverbg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hoverscale-105
+                            Contactez-nous
+                        a
+                        a href=#produits class=border-2 border-orange-500 text-orange-400 hoverbg-orange-500 hovertext-white px-8 py-4 rounded-lg font-semibold transition-all
+                            Nos Produits
+                        a
+                    div
+                div
+                div class=relative
+                    div class=animate-float
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887image4e5c253d-7b60-4624-9513-5984ed199369.png alt=Large assortment of construction materials including cement bags, tools, and electrical supplies arranged professionally class=rounded-2xl shadow-2xl 
+                    div
+                    div class=absolute -bottom-4 -left-4 w-32 h-32 bg-orange-500 rounded-lg opacity-20 animate-pulse-slowdiv
+                    div class=absolute -top-4 -right-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 animate-pulse-slow style=animation-delay 1s;div
+                div
+            div
+        div
+    section
+
+    !-- Services Section --
+    section id=services class=py-20 bg-gray-900
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
+            div class=text-center mb-16
+                h2 class=text-4xl font-bold text-white mb-4Nos Servicesh2
+                p class=text-xl text-gray-400 max-w-3xl mx-auto
+                    Une gamme complète de services pour répondre à tous vos besoins en construction et rénovation
+                p
+            div
+            
+            div class=grid grid-cols-1 mdgrid-cols-2 lggrid-cols-4 gap-8
+                !-- Service 1 --
+                div class=card-hover bg-gray-800 p-8 rounded-2xl text-center
+                    div class=w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6
+                        i class=fas fa-tools text-2xl text-whitei
+                    div
+                    h3 class=text-xl font-semibold text-white mb-4Matériaux de Constructionh3
+                    p class=text-gray-400Ciment, agrégats, ferraillage et tous matériaux pour vos projets de constructionp
+                div
+
+                !-- Service 2 --
+                div class=card-hover bg-gray-800 p-8 rounded-2xl text-center
+                    div class=w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6
+                        i class=fas fa-bolt text-2xl text-whitei
+                    div
+                    h3 class=text-xl font-semibold text-white mb-4Équipements Électriquesh3
+                    p class=text-gray-400Câbles, disjoncteurs, prises et tout le matériel électrique professionnelp
+                div
+
+                !-- Service 3 --
+                div class=card-hover bg-gray-800 p-8 rounded-2xl text-center
+                    div class=w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6
+                        i class=fas fa-paint-roller text-2xl text-whitei
+                    div
+                    h3 class=text-xl font-semibold text-white mb-4Peinture & Revêtementsh3
+                    p class=text-gray-400Peintures intérieures, extérieures, vernis et produits de finition haut de gammep
+                div
+
+                !-- Service 4 --
+                div class=card-hover bg-gray-800 p-8 rounded-2xl text-center
+                    div class=w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6
+                        i class=fas fa-heartbeat text-2xl text-whitei
+                    div
+                    h3 class=text-xl font-semibold text-white mb-4Matériaux de Santéh3
+                    p class=text-gray-400Équipements sanitaires, matériel médical et produits pour établissements de santép
+                div
+            div
+        div
+    section
+
+    !-- Divider --
+    div class=section-dividerdiv
+
+    !-- Products Gallery --
+    section id=produits class=py-20 bg-gray-900
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
+            div class=text-center mb-16
+                h2 class=text-4xl font-bold text-white mb-4Nos Produitsh2
+                p class=text-xl text-gray-400 max-w-3xl mx-auto
+                    Découvrez notre sélection de matériaux de haute qualité pour tous vos projets
+                p
+            div
+
+            div class=grid grid-cols-1 mdgrid-cols-2 lggrid-cols-3 gap-8
+                !-- Product 1 --
+                div class=card-hover bg-gray-800 rounded-2xl overflow-hidden
+                    div class=h-64 overflow-hidden
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887imagef7190e17-14a4-4fab-8119-cdd93f3fa87e.png alt=Various types of electrical cables and wiring organized on shelves in an electrical supply store class=w-full h-full object-cover transition-transform duration-300 hoverscale-110 
+                    div
+                    div class=p-6
+                        h3 class=text-xl font-semibold text-white mb-2Matériel Électriqueh3
+                        p class=text-gray-400 mb-4Câbles, interrupteurs, prises et accessoires électriques de qualitép
+                        div class=flex items-center justify-between
+                            span class=text-orange-400 font-semiboldÀ partir de 20 DHspan
+                            button class=bg-orange-500 hoverbg-orange-600 text-white px-4 py-2 rounded-lg text-sm transition-colors
+                                Détails
+                            button
+                        div
+                    div
+                div
+
+                !-- Product 2 --
+                div class=card-hover bg-gray-800 rounded-2xl overflow-hidden
+                    div class=h-64 overflow-hidden
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887imagec83e4e7a-2568-458d-9b0b-0afb28c86cf6.png alt=Assorted construction tools including hammers, saws, and measuring tools displayed on a workbench class=w-full h-full object-cover transition-transform duration-300 hoverscale-110 
+                    div
+                    div class=p-6
+                        h3 class=text-xl font-semibold text-white mb-2Outillage Professionnelh3
+                        p class=text-gray-400 mb-4Outils de qualité pour professionnels et particuliersp
+                        div class=flex items-center justify-between
+                            span class=text-orange-400 font-semiboldÀ partir de 15 DHspan
+                            button class=bg-orange-500 hoverbg-orange-600 text-white px-4 py-2 rounded-lg text-sm transition-colors
+                                Détails
+                            button
+                        div
+                    div
+                div
+
+                !-- Product 3 --
+                div class=card-hover bg-gray-800 rounded-2xl overflow-hidden
+                    div class=h-64 overflow-hidden
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887image18e8e7df-a199-4abb-9758-0cab08e281bc.png alt=Colorful display of paint cans and painting supplies in a hardware store with brushes and rollers class=w-full h-full object-cover transition-transform duration-300 hoverscale-110 
+                    div
+                    div class=p-6
+                        h3 class=text-xl font-semibold text-white mb-2Peintures & Revêtementsh3
+                        p class=text-gray-400 mb-4Large gamme de couleurs et finitions pour tous les supportsp
+                        div class=flex items-center justify-between
+                            span class=text-orange-400 font-semiboldÀ partir de 15 DHspan
+                            button class=bg-orange-500 hoverbg-orange-600 text-white px-4 py-2 rounded-lg text-sm transition-colors
+                                Détails
+                            button
+                        div
+                    div
+                div
+
+                !-- Product 4 --
+                div class=card-hover bg-gray-800 rounded-2xl overflow-hidden
+                    div class=h-64 overflow-hidden
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887image0bece5f8-a687-45af-968c-c84cfd86a9dd.png alt=Stacked bags of cement and construction aggregates in a warehouse setting class=w-full h-full object-cover transition-transform duration-300 hoverscale-110 
+                    div
+                    div class=p-6
+                        h3 class=text-xl font-semibold text-white mb-2Ciments & Agrégatsh3
+                        p class=text-gray-400 mb-4Matériaux de construction de première qualité pour fondations solidesp
+                        div class=flex items-center justify-between
+                            span class=text-orange-400 font-semiboldÀ partir de 30 DHspan
+                            button class=bg-orange-500 hoverbg-orange-600 text-white px-4 py-2 rounded-lg text-sm transition-colors
+                                Détails
+                            button
+                        div
+                    div
+                div
+
+                !-- Product 5 --
+                div class=card-hover bg-gray-800 rounded-2xl overflow-hidden
+                    div class=h-64 overflow-hidden
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887image6f73252a-638c-498a-93bc-286dc1b43338.png alt=Sanitary products and bathroom fixtures displayed in a clean, organized showroom class=w-full h-full object-cover transition-transform duration-300 hoverscale-110 
+                    div
+                    div class=p-6
+                        h3 class=text-xl font-semibold text-white mb-2Sanitaires & Santéh3
+                        p class=text-gray-400 mb-4Équipements sanitaires et matériel pour établissements de santép
+                        div class=flex items-center justify-between
+                            span class=text-orange-400 font-semiboldÀ partir de 75 DHspan
+                            button class=bg-orange-500 hoverbg-orange-600 text-white px-4 py-2 rounded-lg text-sm transition-colors
+                                Détails
+                            button
+                        div
+                    div
+                div
+
+                !-- Product 6 --
+                div class=card-hover bg-gray-800 rounded-2xl overflow-hidden
+                    div class=h-64 overflow-hidden
+                        img src=httpsstorage.googleapis.comworkspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887image9f03fcba-b039-494d-a91c-e70fe1b9c721.png alt=Plumbing pipes, fittings, and fixtures organized in a hardware store section class=w-full h-full object-cover transition-transform duration-300 hoverscale-110 
+                    div
+                    div class=p-6
+                        h3 class=text-xl font-semibold text-white mb-2Plomberie & Raccordementsh3
+                        p class=text-gray-400 mb-4Tubes, vannes et accessoires de plomberie professionnellep
+                        div class=flex items-center justify-between
+                            span class=text-orange-400 font-semiboldÀ partir de 10 DHspan
+                            button class=bg-orange-500 hoverbg-orange-600 text-white px-4 py-2 rounded-lg text-sm transition-colors
+                                Détails
+                            button
+                        div
+                    div
+                div
+            div
+        div
+    section
+
+    !-- Divider --
+    div class=section-dividerdiv
+
+    !-- Contact Section --
+    section id=contact class=py-20 bg-gray-900
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
+            div class=text-center mb-16
+                h2 class=text-4xl font-bold text-white mb-4Contactez-noush2
+                p class=text-xl text-gray-400 max-w-3xl mx-auto
+                    Prêts à démarrer votre projet  Contactez notre équipe pour obtenir un devis personnalisé
+                p
+            div
+
+            div class=grid grid-cols-1 lggrid-cols-2 gap-12
+                div
+                    div class=bg-gray-800 p-8 rounded-2xl
+                        h3 class=text-2xl font-semibold text-white mb-6Informations de Contacth3
+                        
+                        div class=space-y-6
+                            div class=flex items-start
+                                div class=w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0
+                                    i class=fas fa-phone text-whitei
+                                div
+                                div class=ml-4
+                                    h4 class=text-lg font-semibold text-whiteTéléphoneh4
+                                    p class=text-orange-400 text-lg font-medium0661259345p
+                                div
+                            div
+
+                            div class=flex items-start
+                                div class=w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0
+                                    i class=fas fa-map-marker-alt text-whitei
+                                div
+                                div class=ml-4
+                                    h4 class=text-lg font-semibold text-whiteAdresseh4
+                                    p class=text-gray-400Mag. N 1, Rue Beni M'guild Vn - Meknès (M)p
+                                div
+                            div
+
+                            div class=flex items-start
+                                div class=w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0
+                                    i class=fas fa-clock text-whitei
+                                div
+                                div class=ml-4
+                                    h4 class=text-lg font-semibold text-whiteHorairesh4
+                                    p class=text-gray-400Lun - Sam 8h00 - 18h30p
+                                    p class=text-gray-400Dimanche Fermép
+                                div
+                            div
+                        div
+                    div
+                div
+
+                div class=bg-gray-800 p-8 rounded-2xl
+                    h3 class=text-2xl font-semibold text-white mb-6Envoyez-nous un messageh3
+                    form class=space-y-6
+                        div class=grid grid-cols-1 mdgrid-cols-2 gap-4
+                            div
+                                label class=block text-sm font-medium text-gray-400 mb-2Nom completlabel
+                                input type=text class=w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focusoutline-none focusring-2 focusring-orange-500 focusborder-transparent placeholder=Votre nom
+                            div
+                            div
+                                label class=block text-sm font-medium text-gray-400 mb-2Téléphonelabel
+                                input type=tel class=w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focusoutline-none focusring-2 focusring-orange-500 focusborder-transparent placeholder=Votre téléphone
+                            div
+                        div
+                        div
+                            label class=block text-sm font-medium text-gray-400 mb-2Sujetlabel
+                            input type=text class=w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focusoutline-none focusring-2 focusring-orange-500 focusborder-transparent placeholder=Sujet du message
+                        div
+                        div
+                            label class=block text-sm font-medium text-gray-400 mb-2Messagelabel
+                            textarea rows=4 class=w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focusoutline-none focusring-2 focusring-orange-500 focusborder-transparent placeholder=Votre messagetextarea
+                        div
+                        button type=submit class=w-full bg-orange-500 hoverbg-orange-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors transform hoverscale-105
+                            Envoyer le message
+                        button
+                    form
+                div
+            div
+        div
+    section
+
+    !-- Footer --
+    footer class=bg-gray-900 border-t border-gray-800 py-12
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
+            div class=grid grid-cols-1 mdgrid-cols-4 gap-8
+                div
+                    div class=flex items-center mb-6
+                        div class=w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center
+                            span class=text-gray-900 font-bold text-xlPspan
+                        div
+                        span class=ml-3 text-white text-xl font-boldPRIMODISspan
+                    div
+                    p class=text-gray-400 mb-4
+                        Votre partenaire de confiance pour tous vos besoins en matériaux de construction et équipements.
+                    p
+                div
+
+                div
+                    h4 class=text-lg font-semibold text-white mb-6Nos Servicesh4
+                    ul class=space-y-2
+                        lia href=# class=text-gray-400 hovertext-orange-400 transition-colorsMatériaux Constructionali
+                        lia href=# class=text-gray-400 hovertext-orange-400 transition-colorsÉquipements Électriquesali
+                        lia href=# class=text-gray-400 hovertext-orange-400 transition-colorsPeinture & Revêtementsali
+                        lia href=# class=text-gray-400 hovertext-orange-400 transition-colorsMatériaux de Santéali
+                    ul
+                div
+
+                div
+                    h4 class=text-lg font-semibold text-white mb-6Liens Rapidesh4
+                    ul class=space-y-2
+                        lia href=#accueil class=text-gray-400 hovertext-orange-400 transition-colorsAccueilali
+                        lia href=#services class=text-gray-400 hovertext-orange-400 transition-colorsServicesali
+                        lia href=#produits class=text-gray-400 hovertext-orange-400 transition-colorsProduitsali
+                        lia href=#contact class=text-gray-400 hovertext-orange-400 transition-colorsContactali
+                    ul
+                div
+
+                div
+                    h4 class=text-lg font-semibold text-white mb-6Contacth4
+                    div class=space-y-2
+                        p class=text-gray-400 flex items-center
+                            i class=fas fa-phone text-orange-400 mr-3i
+                            0661259345
+                        p
+                        p class=text-gray-400 flex items-center
+                            i class=fas fa-map-marker-alt text-orange-400 mr-3i
+                            Mag. N 1, Rue Beni M'guild Vn - Meknès (M)
+                        p
+                        p class=text-gray-400 flex items-center
+                            i class=fas fa-clock text-orange-400 mr-3i
+                            Lun-Sam 8h-18h30
+                        p
+                    div
+                div
+            div
+
+            div class=border-t border-gray-800 mt-12 pt-8 flex flex-col mdflex-row justify-between items-center
+                p class=text-gray-400 text-sm
+                    © 2024 Primodis. Tous droits réservés.
+                p
+                div class=flex space-x-4 mt-4 mdmt-0
+                    a href=# class=text-gray-400 hovertext-orange-400 transition-colors
+                        i class=fab fa-facebook-fi
+                    a
+                    a href=# class=text-gray-400 hovertext-orange-400 transition-colors
+                        i class=fab fa-instagrami
+                    a
+                    a href=# class=text-gray-400 hovertext-orange-400 transition-colors
+                        i class=fab fa-twitteri
+                    a
+                div
+            div
+        div
+    footer
+
+    !-- Back to Top Button --
+    button id=backToTop class=fixed bottom-8 right-8 bg-orange-500 hoverbg-orange-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all opacity-0 invisible
+        i class=fas fa-arrow-upi
+    button
+
+    script
+         Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () = {
+            if (window.scrollY  300) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible');
+                backToTop.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTop.addEventListener('click', () = {
+            window.scrollTo({ top 0, behavior 'smooth' });
+        });
+
+         Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^=#]').forEach(anchor = {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior 'smooth',
+                        block 'start'
+                    });
+                }
+            });
+        });
+
+         Animation on scroll
+        const observerOptions = {
+            threshold 0.1,
+            rootMargin '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) = {
+            entries.forEach(entry = {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(card = {
+            observer.observe(card);
+        });
+    script
+body
+html
+
